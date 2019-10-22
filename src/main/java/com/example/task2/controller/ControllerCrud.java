@@ -17,17 +17,22 @@ import org.springframework.web.server.ResponseStatusException;
 @RestController
 @RequestMapping(value = "v1")
 public class ControllerCrud {
-    ErrorHandling errorDisplay;
+
     private static final Logger LOG = LogManager.getLogger(ControllerCrud.class);
+
     @Autowired
     private StudentService studentservice;
 
     @PostMapping(value = "/student", produces = "application/json")
     public StudentModel createRecord(@RequestBody StudentModel model) {
+        try {
+            return studentservice.createNewRecord(model);
+        }catch (StudentNotFoundException e){
+            LOG.error("Error creating Log"+e.getMessage());
+            throw new StudentNotFoundException(e.getMessage());
+        }
+        }
 
-        return studentservice.createNewRecord(model);
-
-    }
 
     @GetMapping(value = "/students", produces = "application/json")
     public List<StudentModel> getAllStudent() {

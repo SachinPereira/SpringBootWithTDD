@@ -1,0 +1,6 @@
+
+Bsquid:S1481%"+Remove this unused "result" local variable.(Õè‹§
+Msquid:S3655)"6Call "student.isPresent()" before accessing the value.(ˆ¹ê˜
+Ksquid:S2201'"/The return value of "orElseThrow" must be used.(äë³ÿÿÿÿÿ
+lsquid:S3973"IUse indentation to denote the code conditionally executed by this "else".(„¶áìøÿÿÿÿ8ÇÂÛ’ß-
+esquid:S1858"H"getPhonenumber" returns a string, there's no need to call "toString()".(Å‡H8ÇÂÛ’ß-

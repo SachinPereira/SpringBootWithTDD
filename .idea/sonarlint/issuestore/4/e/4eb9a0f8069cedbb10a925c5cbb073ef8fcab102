@@ -1,0 +1,8 @@
+
+]squid:S3457G"AFormat specifiers should be used instead of string concatenation.(Ãé”©ùÿÿÿÿ
+\squid:S46842"@Replace this persistent entity with a simple POJO or DTO object.(Í¢¾úùÿÿÿÿ
+Zsquid:S1155)">Use isEmpty() to check whether the collection is empty or not.(ù¹‡ÿÿÿÿÿ
+\squid:S4684"@Replace this persistent entity with a simple POJO or DTO object.(äô„ÿÿÿÿÿ
+usquid:S2293?"YReplace the type specification in this constructor call with the diamond operator ("<>").(«¹°ªşÿÿÿÿ
+_squid:S3457"AFormat specifiers should be used instead of string concatenation.(İ­¥¦8Ö÷²”ß-
+usquid:UselessImportCheck"JRemove this unused import 'com.example.task2.errorhandling.ErrorHandling'.(«ş†¹8ü•£”ß-
