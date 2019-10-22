@@ -21,9 +21,7 @@ public class StudentServiceImpli implements StudentService {
 
     @Override
     public StudentModel createNewRecord(StudentModel studentEntry) {
-        if (studentEntry.getPhonenumber().length() != 10)
-            throw new StudentNotFoundException(studentEntry.getPhonenumber());
-        else
+
             return repository.save(studentEntry);
     }
 
