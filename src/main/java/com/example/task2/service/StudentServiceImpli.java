@@ -16,17 +16,13 @@ public class StudentServiceImpli implements StudentService {
     StudentNotFoundException exception;
 
     public StudentServiceImpli(StudentRepository repository) {
-
         this.repository = repository;
     }
 
     @Override
     public StudentModel createNewRecord(StudentModel studentEntry) {
-            if(studentEntry.getPhonenumber().length()!=10)
-                throw  new StudentNotFoundException(studentEntry.getPhonenumber());
-            else
-            return repository.save(studentEntry);
 
+            return repository.save(studentEntry);
     }
 
     @Override
