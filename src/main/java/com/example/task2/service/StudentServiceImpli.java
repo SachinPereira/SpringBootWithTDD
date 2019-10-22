@@ -21,7 +21,6 @@ public class StudentServiceImpli implements StudentService {
 
     @Override
     public StudentModel createNewRecord(StudentModel studentEntry) {
-
             return repository.save(studentEntry);
     }
 
